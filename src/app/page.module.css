@@ -63,7 +63,7 @@
   font-weight: 700;
 }
 
-.send_message_btn{
+.red_btn{
   font-family: var(--font);
   background-color: var(--red);
   font-size: var(--font_size);
@@ -73,11 +73,21 @@
   border-radius: 10px;
 }
 
-.about_btn{
+.transparent_btn_white{
   font-family: var(--font);
   background-color: transparent;
   font-size: var(--font_size);
   color: var(--white);
+  font-weight: 700;
+  padding: 18px 35px;
+  border-radius: 10px;
+}
+
+.transparent_btn_black{
+  font-family: var(--font);
+  background-color: transparent;
+  font-size: var(--font_size);
+  color: black;
   font-weight: 700;
   padding: 18px 35px;
   border-radius: 10px;
@@ -98,4 +108,71 @@
 .second_section{
   background-color: var(--white);
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.content_second_section{
+  padding: 100px 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.img_content_second_section{
+  width: 38%;
+  /* height: 100%; */
+  display: flex;
+  align-items: flex-start;
+}
+
+.img_content_second_section > img{
+  width: 100%;
+  /* height: 100%; */
+}
+
+.text_content_second_section{
+  width: 48%;
+}
+
+.h2_normal_section{
+  font-family: var(--font);
+  font-weight: 700;
+  color: var(--red);
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+}
+
+.text_content_second_section > p{
+  font-family: var(--font);
+  font-weight: 500;
+  color: black;
+  font-size: var(--font_size);
+  margin-bottom: 60px;
+}
+
+.third_section{
+  background-color: var(--second_background);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content_third_section{
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.content_third_section > i{
+  font-weight: 700;
+  color: var(--red);
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+
