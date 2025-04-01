@@ -8,7 +8,7 @@
 }
 
 .grid_header {
-  padding: 10px 0;
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +26,7 @@
 
 .header_nav > ul > li {
   list-style-type: none;
-  padding: 10px 0 10px 30px;
+  padding: 10px 0 10px 45px;
 }
 
 .header_nav > ul > li > a {
