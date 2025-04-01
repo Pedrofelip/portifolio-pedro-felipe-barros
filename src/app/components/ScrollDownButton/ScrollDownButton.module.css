@@ -1,0 +1,22 @@
+.container {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .button {
+    padding: 12px;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    color: var(--red);
+  }
+  

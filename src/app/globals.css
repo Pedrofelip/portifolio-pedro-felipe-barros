@@ -1,12 +1,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --second_background: #3C3C3B;
+  --font: "Inter", sans-serif;
+  --font_size: 1.1rem;
+  --white: #FDFDFD;
+  --red: #F24957;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
 
@@ -19,7 +24,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
