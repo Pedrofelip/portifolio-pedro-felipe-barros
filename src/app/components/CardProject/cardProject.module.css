@@ -1,0 +1,96 @@
+.project {
+  background-color: var(--white);
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.grid_project {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.content_img_project {
+  width: 35%;
+  height: 220px;
+  margin-right: 25px;
+  border-radius: 15px;
+}
+
+.content_img_project > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.content_text_project {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content_text_project > div > h3 {
+  font-family: var(--font);
+  font-weight: 700;
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.content_text_project > div > p {
+  font-family: var(--font);
+  font-weight: 300;
+  color: black;
+  font-size: var(--font_size);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.grid_button{
+    display: flex;
+    flex-direction: row;
+}
+
+.red_btn{
+    display: block;
+    width: fit-content;
+    font-family: var(--font);
+    background-color: var(--red);
+    font-size: 1rem;
+    color: var(--white);
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .red_btn > i{
+    margin-left: 5px;
+  }
+  
+  
+  .transparent_btn_black{
+    display: block;
+    width: fit-content;
+    font-family: var(--font);
+    background-color: transparent;
+    font-size: 1rem;
+    color: black;
+    font-weight: 700;
+    padding: 10px 35px;
+    border-radius: 10px;
+  }

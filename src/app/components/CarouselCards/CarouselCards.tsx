@@ -40,7 +40,7 @@ const CarouselCards: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {certificates.map((item: any) => (
             <div className="embla__slide" key={item.id}>
-              <Card key={item.id} product={item}></Card>
+              <Card key={item.id} certificate={item}></Card>
             </div>
           ))}
         </div>

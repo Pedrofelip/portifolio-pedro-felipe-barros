@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -10,17 +10,19 @@ import { EmblaOptionsType } from "embla-carousel";
 import { useContext } from "react";
 import Context from "@/data/context/Context";
 import CarouselSkills from "./components/CarouselSkills/CarouselSkills";
+import CardProject from "./components/CardProject/CardProject";
 
 export default function Home() {
-
-  const { certificates, skills } = useContext(Context);
+  const { certificates, skills, projects } = useContext(Context);
 
   const OPTIONS: EmblaOptionsType = { align: "start" };
 
-  const OPTIONS_SKILLS: EmblaOptionsType = { align: 'start', dragFree: true, loop: true }
-  const SLIDES = skills
-
-
+  const OPTIONS_SKILLS: EmblaOptionsType = {
+    align: "start",
+    dragFree: true,
+    loop: true,
+  };
+  const SLIDES = skills;
 
   return (
     <>
@@ -81,22 +83,47 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.third_section}>
-          <div className={`${styles.grid_container} ${styles.content_third_section}`}>
+          <div
+            className={`${styles.grid_container} ${styles.content_third_section}`}
+          >
             <h2 className={styles.h2_normal_section}>Certificados</h2>
             <i className="fa-solid fa-graduation-cap"></i>
             <CarouselCards options={OPTIONS}></CarouselCards>
           </div>
         </section>
         <section className={styles.fourth_section}>
-          <div className={`${styles.grid_container} ${styles.content_fourth_section}`}>
+          <div
+            className={`${styles.grid_container} ${styles.content_fourth_section}`}
+          >
             <div className={styles.fourth_section_txt}>
               <h2 className={styles.h2_normal_section}>Habilidades</h2>
               <i className="fa-solid fa-gears"></i>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, ullam laboriosam provident perferendis eligendi voluptatum optio ducimus, nostrum sapiente libero officiis quia unde vero quae quisquam dolore dolorem quo quidem aut nihil sint velit. Voluptates nobis tenetur maiores explicabo quo ratione exercitationem quibusdam dignissimos. Obcaecati iusto odio a nobis cupiditate!</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
+                ullam laboriosam provident perferendis eligendi voluptatum optio
+                ducimus, nostrum sapiente libero officiis quia unde vero quae
+                quisquam dolore dolorem quo quidem aut nihil sint velit.
+                Voluptates nobis tenetur maiores explicabo quo ratione
+                exercitationem quibusdam dignissimos. Obcaecati iusto odio a
+                nobis cupiditate!
+              </p>
             </div>
             <div className={styles.fourth_section_grid_carousel}>
               <CarouselSkills slides={SLIDES} options={OPTIONS_SKILLS} />
               <CarouselSkills slides={SLIDES} options={OPTIONS_SKILLS} />
+            </div>
+          </div>
+        </section>
+        <section className={styles.fiveth_section}>
+          <div
+            className={`${styles.grid_container} ${styles.content_fiveth_section}`}
+          >
+            <h2 className={styles.h2_normal_section}>Projetos</h2>
+            <i className="fa-solid fa-pen-to-square"></i>
+            <div className={styles.grid_projects}>
+              {projects.map((item: any) => (
+                <CardProject project={item}></CardProject>
+              ))}
             </div>
           </div>
         </section>

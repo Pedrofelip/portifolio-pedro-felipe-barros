@@ -167,11 +167,45 @@ export function ContextProvider(props: any) {
     },
     
   ]);
+
+  const [projects, setProjects] = useState([
+    {
+      id: 1,
+      image: "https://ortogonalprojetos.com.br/wp-content/uploads/2016/01/Program-Management-01.jpg",
+      title: "Pedro Felipe Barros da Silva",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    },
+    {
+      id: 1,
+      image: "https://ortogonalprojetos.com.br/wp-content/uploads/2016/01/Program-Management-01.jpg",
+      title: "Best of Brazil",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    },
+    {
+      id: 1,
+      image: "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png",
+      title: "HTML5",
+      description:
+        "Mel de laranjeira, com um sabor delicado e suave, ideal para adoçar bebidas e sobremesas.",
+    },
+    {
+      id: 1,
+      image: "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png",
+      title: "HTML5",
+      description:
+        "Mel de laranjeira, com um sabor delicado e suave, ideal para adoçar bebidas e sobremesas.",
+    },
+  ]);
+
+
   return (
     <Context.Provider
       value={{
         certificates,
-        skills
+        skills,
+        projects
       }}
     >
       {props.children}
