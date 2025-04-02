@@ -15,12 +15,11 @@ import Context from "@/data/context/Context";
 import Card from "../Card/Card";
 
 type PropType = {
-  slides: number[];
   options?: EmblaOptionsType;
 };
 
 const CarouselCards: React.FC<PropType> = (props) => {
-  const { slides, options } = props;
+  const { options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const { certificates } = useContext(Context);

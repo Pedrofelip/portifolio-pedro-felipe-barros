@@ -6,8 +6,6 @@ export default function Card({ product }) {
   //Isso garante que tags sempre seja um array válido, mesmo se product.tags não estiver definido.
   const tags = [...(product.tags || [])];
 
-  console.log(tags);
-
   return (
     <a href="#">
       <article className={styles.card}>

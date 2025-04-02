@@ -121,10 +121,57 @@ export function ContextProvider(props: any) {
       weight: "500g",
     },
   ]);
+
+  const [skills, setSkills] = useState([
+    {
+      id: 1,
+      image: "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png",
+      title: "HTML5",
+      description:
+        "Mel de laranjeira, com um sabor delicado e suave, ideal para adoçar bebidas e sobremesas.",
+    },
+    {
+      id: 1,
+      image: "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png",
+      title: "HTML5",
+      description:
+        "Mel de laranjeira, com um sabor delicado e suave, ideal para adoçar bebidas e sobremesas.",
+    },
+    {
+      id: 1,
+      image: "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png",
+      title: "HTML5",
+      description:
+        "Mel de laranjeira, com um sabor delicado e suave, ideal para adoçar bebidas e sobremesas.",
+    },
+    {
+      id: 1,
+      image: "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png",
+      title: "HTML5",
+      description:
+        "Mel de laranjeira, com um sabor delicado e suave, ideal para adoçar bebidas e sobremesas.",
+    },
+    {
+      id: 1,
+      image: "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png",
+      title: "HTML5",
+      description:
+        "Mel de laranjeira, com um sabor delicado e suave, ideal para adoçar bebidas e sobremesas.",
+    },
+    {
+      id: 1,
+      image: "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png",
+      title: "HTML5",
+      description:
+        "Mel de laranjeira, com um sabor delicado e suave, ideal para adoçar bebidas e sobremesas.",
+    },
+    
+  ]);
   return (
     <Context.Provider
       value={{
-        certificates
+        certificates,
+        skills
       }}
     >
       {props.children}
