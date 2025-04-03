@@ -42,7 +42,7 @@ export default function Home() {
                 <a href="#" className={styles.red_btn}>
                   Envie uma mensagem
                 </a>
-                <a href="#" className={styles.transparent_btn_white}>
+                <a href="#about_section" className={styles.transparent_btn_white}>
                   Sobre mim
                 </a>
               </div>
@@ -51,9 +51,9 @@ export default function Home() {
               <img src="./developer-activity-animate.svg" alt="" />
             </div>
           </div>
-          <ScrollDownButton />
+          <ScrollDownButton url={"#about_section"} />
         </section>
-        <section className={styles.second_section}>
+        <section className={styles.second_section} id="about_section">
           <div
             className={`${styles.grid_container} ${styles.content_second_section}`}
           >
@@ -61,16 +61,18 @@ export default function Home() {
               <img src="./developer-activity-animate.svg" alt="" />
             </div>
             <div className={styles.text_content_second_section}>
-              <h2 className={styles.h2_normal_section}>Sobre mim</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
-                laudantium quae pariatur similique repudiandae voluptas sint
-                dolorum ullam nostrum tenetur fuga numquam eveniet, consequuntur
-                rem cupiditate vero explicabo dicta a neque rerum natus non
-                necessitatibus ducimus temporibus! Rerum odit repellat
-                reiciendis ipsa iste amet ipsum deserunt maxime sed, adipisci
-                aperiam.
-              </p>
+              <div>
+                <h2 className={styles.h2_normal_section}>Sobre mim</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+                  laudantium quae pariatur similique repudiandae voluptas sint
+                  dolorum ullam nostrum tenetur fuga numquam eveniet, consequuntur
+                  rem cupiditate vero explicabo dicta a neque rerum natus non
+                  necessitatibus ducimus temporibus! Rerum odit repellat
+                  reiciendis ipsa iste amet ipsum deserunt maxime sed, adipisci
+                  aperiam.
+                </p>
+              </div>
               <div className={styles.grid_button}>
                 <a href="#" className={styles.red_btn}>
                   Baixar currículo
