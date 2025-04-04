@@ -46,6 +46,8 @@ const CarouselCards: React.FC<PropType> = (props) => {
         </div>
       </div>
 
+      <div className="front_gradient"></div>
+
       <div className="arrow__buttons">
         <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />

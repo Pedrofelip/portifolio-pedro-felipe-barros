@@ -15,7 +15,7 @@ import CardProject from "./components/CardProject/CardProject";
 export default function Home() {
   const { certificates, skills, projects } = useContext(Context);
 
-  const OPTIONS: EmblaOptionsType = { align: "start" };
+  const OPTIONS: EmblaOptionsType = { align: "start", loop: true};
 
   const OPTIONS_SKILLS: EmblaOptionsType = {
     align: "start",

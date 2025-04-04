@@ -131,13 +131,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aqua;
 }
 
 .img_content_second_section {
   width: 38%;
   height: 100%;
-  display: flex;
+  display: block;
   align-items: flex-start;
 }
 
@@ -147,7 +146,6 @@
 }
 
 .text_content_second_section {
-  background-color: azure;
   width: 48%;
   height: 100%;
   display: flex;
