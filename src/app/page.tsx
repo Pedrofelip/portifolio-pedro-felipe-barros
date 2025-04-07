@@ -11,11 +11,12 @@ import { useContext } from "react";
 import Context from "@/data/context/Context";
 import CarouselSkills from "./components/CarouselSkills/CarouselSkills";
 import CardProject from "./components/CardProject/CardProject";
+import DownloadBtn from "./components/DownloadBtn/DownloadBtn";
 
 export default function Home() {
   const { certificates, skills, projects } = useContext(Context);
 
-  const OPTIONS: EmblaOptionsType = { align: "start" };
+  const OPTIONS: EmblaOptionsType = { align: "start", loop: true};
 
   const OPTIONS_SKILLS: EmblaOptionsType = {
     align: "start",
@@ -36,7 +37,7 @@ export default function Home() {
               <h3>Prazer, eu sou o</h3>
               <h1>pedro felipe</h1>
               <h2>
-                Desenvolvedor <span>Full-stack</span>
+                Desenvolvedor <span></span>
               </h2>
               <div className={styles.grid_button}>
                 <a href="#" className={styles.red_btn}>
@@ -74,9 +75,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.grid_button}>
-                <a href="#" className={styles.red_btn}>
-                  Baixar currículo
-                </a>
+                <DownloadBtn></DownloadBtn>
                 <a href="#" className={styles.transparent_btn_black}>
                   Vídeo apresentação
                 </a>

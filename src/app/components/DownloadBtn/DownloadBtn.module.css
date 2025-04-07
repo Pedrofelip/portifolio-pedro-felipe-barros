@@ -1,0 +1,48 @@
+.button {
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button:hover {
+    background-color: #e04360;
+  }
+  
+  .effectsWrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .balloon {
+    position: absolute;
+    bottom: -80px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 999;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .button {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .button {
+      font-size: 0.95rem;
+      padding: 0.7rem 1.2rem;
+    }
+  }
+  
