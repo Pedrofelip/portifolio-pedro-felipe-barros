@@ -9,14 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^12.6.2",
+    "canvas-confetti": "^1.9.3",
+    "embla-carousel": "8.5.2",
+    "embla-carousel-autoplay": "8.5.2",
+    "embla-carousel-react": "8.5.2",
+    "framer-motion": "^12.6.3",
     "lucide-react": "^0.486.0",
     "next": "15.2.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "embla-carousel-react": "8.5.2",
-		"embla-carousel": "8.5.2",
-    "embla-carousel-autoplay": "8.5.2"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -7,6 +7,10 @@
   --font_size: 1.1rem;
   --white: #FDFDFD;
   --red: #F24957;
+  --fs-1: clamp(1.5rem, 1.2rem + 1vw, 1.75rem);       /* ~28px */
+  --fs-2: clamp(2rem, 1.5rem + 2vw, 2.8125rem);       /* ~45px */
+  --fs-3: clamp(3.5rem, 2.5rem + 4vw, 5.625rem);      /* ~90px */
+  --fs-4: clamp(5rem, 3rem + 6vw, 7.5rem);       /* Gigante */
 }
 
 @media (prefers-color-scheme: dark) {
