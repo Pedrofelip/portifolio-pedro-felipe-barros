@@ -10,7 +10,7 @@ export default function ScrollDownButton({ url }) {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowButton(true), 2000); // Aparece após 2s
+    const timer = setTimeout(() => setShowButton(true), 0); // Aparece após 2s
     return () => clearTimeout(timer);
   }, []);
 

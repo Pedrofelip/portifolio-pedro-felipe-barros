@@ -1,11 +1,25 @@
 .card{
     width: 100%;
     height: 360px;
+    margin-top: 25px;
     background-color: var(--white);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.103);
+  transform: translateY(-10px);
+}
+
+.grid_card img,
+.grid_tags {
+  pointer-events: none;
 }
 
 .grid_card{
@@ -14,6 +28,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    pointer-events: none;
 }
 
 .grid_card > img{
@@ -22,23 +37,70 @@
     border-radius: 10px;
     margin-bottom: 15px;
     object-fit: cover;
+    pointer-events: none;
 }
 
 .grid_tags{
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
+  pointer-events: none;
 }
 
 .tags{
   display: block;
-  padding: 5px 10px;
+  padding: 4px 9px;
   margin-right: 7px;
   border-radius: 25px;
   font-family: var(--font);
+  font-weight: 600;
   font-size: 10px;
-  color: var(--red);
-  background-color: rgba(255, 0, 0, 0.521);
+}
+
+/* Cores específicas */
+.javascript {
+  /* background-color: #f7de1e44; */
+  color: #F7DF1E;
+  border: 1px solid #F7DF1E;
+}
+
+.typescript {
+  /* background-color: #3777ab44; */
+  color: #3776AB;
+  border: 1px solid #3776AB;
+}
+
+.react {
+  /* background-color: #61dafb44; */
+  color: #61DAFB;
+  border: 1px solid #61DAFB;
+}
+
+.angular {
+  /* background-color: #dd003044; */
+  color: #DD0031;
+  border: 1px solid #DD0031;
+}
+
+.java {
+  /* background-color: #b071192d; */
+  color: #b07219;
+  border: 1px solid #b07219;
+}
+
+.python {
+  /* background-color: #3777ab44; */
+  color: #3776AB;
+  border: 1px solid #3776AB;
+}
+
+
+
+/* Tag default */
+.default {
+  /* background-color: #66666644; */
+  color: #666;
+  border: 1px solid #666;
 }
 
 .grid_card > h3{

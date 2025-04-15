@@ -71,7 +71,7 @@ export default function DownloadBtn() {
             balloons.map((balloon) => (
               <motion.img
                 key={balloon.id}
-                src="/balloon.png"
+                src="/balloon.svg"
                 alt=""
                 className={styles.balloon}
                 initial={{ y: window.innerHeight, opacity: 0 }}

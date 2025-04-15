@@ -12,9 +12,10 @@ import Context from "@/data/context/Context";
 import CarouselSkills from "./components/CarouselSkills/CarouselSkills";
 import CardProject from "./components/CardProject/CardProject";
 import DownloadBtn from "./components/DownloadBtn/DownloadBtn";
+import ScrollBtn from "./components/ScrollBtn/ScrollBtn";
 
 export default function Home() {
-  const { certificates, skills, projects } = useContext(Context);
+  const { certificates, skills, projects, skills_sl } = useContext(Context);
 
   const OPTIONS: EmblaOptionsType = { align: "start", loop: true};
 
@@ -25,14 +26,15 @@ export default function Home() {
   };
   const SLIDES = skills;
 
+  const SLIDES_SL = skills_sl;
+
   return (
     <>
+      <ScrollBtn></ScrollBtn>
       <main className={styles.main}>
         <section className={`${styles.first_section}`}>
           <Header></Header>
-          <div
-            className={`${styles.grid_container} ${styles.content_first_section}`}
-          >
+          <div className={`${styles.grid_container} ${styles.content_first_section}`} id="home">
             <div className={styles.text_content}>
               <h3>Prazer, eu sou o</h3>
               <h1>pedro felipe</h1>
@@ -40,7 +42,7 @@ export default function Home() {
                 Desenvolvedor <span></span>
               </h2>
               <div className={styles.grid_button}>
-                <a href="#" className={styles.red_btn}>
+                <a href="#contact" className={styles.red_btn}>
                   Envie uma mensagem
                 </a>
                 <a href="#about_section" className={styles.transparent_btn_white}>
@@ -49,7 +51,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.img_content}>
-              <img src="./developer-activity-animate.svg" alt="" />
+              <img src="./Source code-bro (1).svg" alt="" />
             </div>
           </div>
           <ScrollDownButton url={"#about_section"} />
@@ -59,7 +61,7 @@ export default function Home() {
             className={`${styles.grid_container} ${styles.content_second_section}`}
           >
             <div className={styles.img_content_second_section}>
-              <img src="./developer-activity-animate.svg" alt="" />
+              <img src="./Code typing-bro.svg" alt="" />
             </div>
             <div className={styles.text_content_second_section}>
               <div>
@@ -83,7 +85,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.third_section}>
+        <section className={styles.third_section} id="certificates">
           <div
             className={`${styles.grid_container} ${styles.content_third_section}`}
           >
@@ -92,7 +94,7 @@ export default function Home() {
             <CarouselCards options={OPTIONS}></CarouselCards>
           </div>
         </section>
-        <section className={styles.fourth_section}>
+        <section className={styles.fourth_section} id="skills">
           <div
             className={`${styles.grid_container} ${styles.content_fourth_section}`}
           >
@@ -111,11 +113,11 @@ export default function Home() {
             </div>
             <div className={styles.fourth_section_grid_carousel}>
               <CarouselSkills slides={SLIDES} options={OPTIONS_SKILLS} />
-              <CarouselSkills slides={SLIDES} options={OPTIONS_SKILLS} />
+              <CarouselSkills slides={SLIDES_SL} options={OPTIONS_SKILLS} />
             </div>
           </div>
         </section>
-        <section className={styles.fiveth_section}>
+        <section className={styles.fiveth_section} id="projects">
           <div
             className={`${styles.grid_container} ${styles.content_fiveth_section}`}
           >
@@ -126,6 +128,20 @@ export default function Home() {
                 <CardProject project={item}></CardProject>
               ))}
             </div>
+          </div>
+        </section>
+        <section className={styles.sixth_section} id="contact">
+          <div  className={`${styles.grid_container} ${styles.content_sixth_section}`}>
+            <h2 className={styles.h2_normal_section}>Entre em contato</h2>
+            <p>Estou disponivel atraves de todos os links abaixo</p>
+            <nav className={styles.contact_links}>
+              <ul>
+                <li><a href="mailto:pedrofelipbarros@gmail.com" target="_blank"><i className="fa-brands fa-google"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/pedro-felipe-barros-da-silva/" target="_blank"><i className="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Pedrofelip" target="_blank"><i className="fa-brands fa-github"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5511982835090" target="_blank"><i className="fa-brands fa-whatsapp"></i></a></li>
+              </ul>
+            </nav>
           </div>
         </section>
       </main>

@@ -7,26 +7,26 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`${container.grid_container} ${styles.grid_header}`}>
-        <img
-          src="https://cdn3.iconfinder.com/data/icons/seo-internet-marketing-flat-icons/250/web-code.png"
-          alt=""
-        />
+        <a href="#" className={styles.logo}>{"<"}<strong>P</strong>f{" />"}</a>
         <nav className={styles.header_nav}>
           <ul>
             <li>
               <a href="#">Inicio</a>
             </li>
             <li>
-              <a href="#">Sobre</a>
+              <a href="#about_section">Sobre</a>
             </li>
             <li>
-              <a href="#">Habilidades</a>
+              <a href="#certificates">Certificados</a>
             </li>
             <li>
-              <a href="#">Projetos</a>
+              <a href="#skills">Habilidades</a>
             </li>
             <li>
-              <a href="#">Contato</a>
+              <a href="#projects">Projetos</a>
+            </li>
+            <li>
+              <a href="#contact">Contato</a>
             </li>
           </ul>
         </nav>
