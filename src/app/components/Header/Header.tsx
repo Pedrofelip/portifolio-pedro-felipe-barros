@@ -1,13 +1,17 @@
-"use client"
+"use client";
 
 import styles from "./header.module.css";
-import container from "../../page.module.css"
+import container from "../../page.module.css";
+import ResponsiveMenu from "../responsive_menu/ResponsiveMenu";
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`${container.grid_container} ${styles.grid_header}`}>
-        <a href="#" className={styles.logo}>{"<"}<strong>P</strong>f{" />"}</a>
+        <a href="#" className={styles.logo}>
+          {"<"}
+          <strong>P</strong>f{" />"}
+        </a>
         <nav className={styles.header_nav}>
           <ul>
             <li>
@@ -30,6 +34,16 @@ export default function Header() {
             </li>
           </ul>
         </nav>
+      </div>
+      <div
+        className={`${styles.grid_header_responsive} ${container.grid_container}`}
+      >
+        <a href="#" className={styles.logo}>
+          {"<"}
+          <strong>P</strong>f{" />"}
+        </a>
+
+        <ResponsiveMenu></ResponsiveMenu>
       </div>
     </header>
   );

@@ -5,6 +5,7 @@
   --third_background: #F1F2F7;
   --font: "Inter", sans-serif;
   --font_size: 1.1rem;
+  --font_size_responsive: 0.8rem;
   --white: #FDFDFD;
   --red: #F24957;
   --fs-1: clamp(1.5rem, 1.2rem + 1vw, 1.75rem);       /* ~28px */
