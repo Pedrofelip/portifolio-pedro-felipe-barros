@@ -53,7 +53,7 @@
   /* Estilo do botão de fechar (X) */
   .closeBtn {
     font-size: var(--font_size);
-    color: var(--red);
+    color: var(--black);
     background: transparent;
     border: none;
     cursor: pointer;
@@ -74,6 +74,7 @@
   }
   
   /* Responsividade */
+
   @media (max-width: 768px) {
     .sidebarToggle {
       top: 10px;

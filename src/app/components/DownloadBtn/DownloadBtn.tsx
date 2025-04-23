@@ -32,22 +32,22 @@ export default function DownloadBtn() {
     setTimeout(() => clearInterval(confettiInterval), 5000);
 
     // Balões
-    const balloonInterval = setInterval(() => {
-      setBalloons((prev) => [
-        ...prev,
-        {
-          id: balloonId++,
-          left: Math.random() * 90,
-          size: 40 + Math.random() * 60,
-          delay: Math.random() * 0.3,
-        },
-      ]);
-    }, 250);
+    // const balloonInterval = setInterval(() => {
+    //   setBalloons((prev) => [
+    //     ...prev,
+    //     {
+    //       id: balloonId++,
+    //       left: Math.random() * 90,
+    //       size: 40 + Math.random() * 60,
+    //       delay: Math.random() * 0.3,
+    //     },
+    //   ]);
+    // }, 250);
 
-    setTimeout(() => {
-      clearInterval(balloonInterval);
-      setAnimating(false);
-    }, 5000);
+    // setTimeout(() => {
+    //   clearInterval(balloonInterval);
+    //   setAnimating(false);
+    // }, 5000);
   };
 
   // Limpa balões antigos

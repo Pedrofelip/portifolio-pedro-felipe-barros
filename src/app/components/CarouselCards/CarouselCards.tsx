@@ -46,6 +46,7 @@ const CarouselCards: React.FC<PropType> = (props) => {
         </div>
       </div>
 
+      <div className="front_gradient_left"></div>
       <div className="front_gradient"></div>
 
       <div className="arrow__buttons">

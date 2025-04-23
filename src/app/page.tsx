@@ -17,7 +17,7 @@ import ScrollBtn from "./components/ScrollBtn/ScrollBtn";
 export default function Home() {
   const { certificates, skills, projects, skills_sl } = useContext(Context);
 
-  const OPTIONS: EmblaOptionsType = { align: "start", loop: true};
+  const OPTIONS: EmblaOptionsType = { align: "center", loop: true};
 
   const OPTIONS_SKILLS: EmblaOptionsType = {
     align: "start",

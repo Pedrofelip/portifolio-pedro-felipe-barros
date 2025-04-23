@@ -28,3 +28,14 @@
     font-style: 300;
     font-size: var(--font_size);
 }
+
+@media (max-width:600px) {
+    .footer > div > p{
+        font-size: var(--font_size_responsive);
+        margin-bottom: 10px;
+    }
+    
+    .footer > div > a{
+        font-size: var(--font_size_responsive);
+    }
+}
