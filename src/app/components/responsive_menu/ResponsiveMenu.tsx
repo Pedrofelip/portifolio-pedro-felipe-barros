@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styles from "./ResponsiveMenu.module.css";
-import Link from "next/link";
 
 const ResponsiveMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

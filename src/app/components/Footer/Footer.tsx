@@ -1,5 +1,4 @@
 import styles from "./footer.module.css"
-import container from "../../page.module.css"
 
 export default function Footer(){
     return(

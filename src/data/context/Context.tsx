@@ -1,12 +1,12 @@
 "use client";
 
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 
 const Context = createContext({} as any);
 export default Context;
 
 export function ContextProvider(props: any) {
-  const [certificates, setCertificates] = useState([
+  const [certificates] = useState([
     {
       id: 1,
       image: [
@@ -129,7 +129,7 @@ export function ContextProvider(props: any) {
     },
   ]);
 
-  const [skills, setSkills] = useState([
+  const [skills] = useState([
     {
       id: 1,
       image: "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png",
@@ -181,7 +181,7 @@ export function ContextProvider(props: any) {
     },
   ]);
 
-  const [skills_sl, setSkills_sl] = useState([
+  const [skills_sl] = useState([
     {
       id: 1,
       image: "https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon.png",
@@ -233,7 +233,7 @@ export function ContextProvider(props: any) {
     },
   ]);
 
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       id: 1,
       image: "https://ortogonalprojetos.com.br/wp-content/uploads/2016/01/Program-Management-01.jpg",

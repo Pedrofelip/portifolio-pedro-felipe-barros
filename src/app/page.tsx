@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/Header/Header";
 import ScrollDownButton from "./components/ScrollDownButton/ScrollDownButton";
@@ -15,7 +15,7 @@ import DownloadBtn from "./components/DownloadBtn/DownloadBtn";
 import ScrollBtn from "./components/ScrollBtn/ScrollBtn";
 
 export default function Home() {
-  const { certificates, skills, projects, skills_sl } = useContext(Context);
+  const {skills, projects, skills_sl } = useContext(Context);
 
   const OPTIONS: EmblaOptionsType = { align: "center", loop: true};
 

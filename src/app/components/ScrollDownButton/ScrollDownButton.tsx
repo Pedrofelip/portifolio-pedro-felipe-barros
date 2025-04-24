@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+// import { ChevronDown } from "lucide-react";
 import styles from "./ScrollDownButton.module.css";
-import { a } from "framer-motion/client";
+// import { a } from "framer-motion/client";
 
 export default function ScrollDownButton({ url }:any) {
   const [showButton, setShowButton] = useState(false);
