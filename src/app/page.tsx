@@ -76,7 +76,7 @@ export default function Home() {
                   aperiam.
                 </p>
               </div>
-              <div className={styles.grid_button}>
+              <div className={`${styles.grid_button} ${styles.grid_button_center}`}>
                 <DownloadBtn></DownloadBtn>
                 <a href="#" className={styles.transparent_btn_black}>
                   Vídeo apresentação

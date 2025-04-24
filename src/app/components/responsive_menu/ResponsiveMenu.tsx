@@ -13,7 +13,7 @@ const ResponsiveMenu = () => {
     setIsOpen(false);
   };
 
-  const handleClickOutside = (e) => {
+  const handleClickOutside = (e:any) => {
     if (e.target.id === "sidebar-overlay") {
       closeSidebar();
     }

@@ -1,6 +1,6 @@
 import styles from "./cardProject.module.css";
 
-export default function CardProject({ project }) {
+export default function CardProject({ project }:any) {
   return (
     <article className={styles.project}>
       <div className={styles.grid_project}>

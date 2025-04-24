@@ -1,6 +1,17 @@
 import styles from "./Card.module.css";
 
-export default function Card({ certificate }) {
+type Certificate = {
+  name: string;
+  description: string;
+  image: string[];
+  tags?: string[];
+};
+
+type CardProps = {
+  certificate: Certificate;
+};
+
+export default function Card({ certificate }: CardProps) {
   //Você pode usar spread operator (...) para espalhar os elementos dentro do novo array:
   //Isso garante que tags sempre seja um array válido, mesmo se product.tags não estiver definido.
   const tags = [...(certificate.tags || [])];

@@ -79,7 +79,7 @@
   transform-origin: bottom left;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .header {
     width: 100%;
     min-height: 90px;
