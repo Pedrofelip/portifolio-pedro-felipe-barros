@@ -65,7 +65,7 @@ export default function DownloadBtn() {
       </a>
 
       {/* Efeitos em camada fixa separada */}
-      <div className={styles.effectsWrapper} aria-hidden>
+      {/* <div className={styles.effectsWrapper} aria-hidden>
         <AnimatePresence>
           {animating &&
             balloons.map((balloon) => (
@@ -90,7 +90,7 @@ export default function DownloadBtn() {
               />
             ))}
         </AnimatePresence>
-      </div>
+      </div> */}
     </>
   );
 }
