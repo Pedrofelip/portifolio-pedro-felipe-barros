@@ -124,6 +124,27 @@
     color: black;
   }
 
+  @media (max-width:400px){
+
+    .grid_button{
+      display: flex;
+      flex-direction: row !important;
+      justify-content: space-between;
+  }
+
+    .red_btn{
+      width: fit-content;
+      font-size: var(--font_size_responsive);
+      padding: 5px 5px !important;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .red_btn > i{
+      display: none;
+    }
+  }
+
   @media (max-width:600px) {
     .project {
       height: 150px;
@@ -251,7 +272,7 @@
     
     .content_text_project > div > p {
       font-size: var(--font_size_responsive);
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
     }
     
     .grid_button{

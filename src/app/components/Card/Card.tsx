@@ -32,7 +32,7 @@ export default function Card({ certificate }: CardProps) {
         <div className={styles.grid_card}>
           <img src={certificate.image[0]} alt={certificate.name} />
           <div className={styles.grid_tags}>
-            {tags.map((item: any, index) => {
+            {tags.map((item: string, index) => {
               const className =
                 languageClassMap[item.toLowerCase()] || styles.default;
               return (

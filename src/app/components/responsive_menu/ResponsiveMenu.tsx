@@ -12,8 +12,8 @@ const ResponsiveMenu = () => {
     setIsOpen(false);
   };
 
-  const handleClickOutside = (e:any) => {
-    if (e.target.id === "sidebar-overlay") {
+  const handleClickOutside = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target instanceof HTMLElement && e.target.id === "sidebar-overlay") {
       closeSidebar();
     }
   };

@@ -23,4 +23,9 @@
     display: none;
   }
 }
-  
+ 
+@media (max-width:400px) {
+  .container{
+    display: block;
+  }
+}

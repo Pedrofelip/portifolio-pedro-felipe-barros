@@ -18,6 +18,14 @@ type PropType = {
   options?: EmblaOptionsType;
 };
 
+type CardProps = {
+  id: number;
+  name: string;
+  description: string;
+  image: string[];
+  tags?: string[];
+};
+
 const CarouselCards: React.FC<PropType> = (props) => {
   const { options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
@@ -38,7 +46,7 @@ const CarouselCards: React.FC<PropType> = (props) => {
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {certificates.map((item: any) => (
+          {certificates.map((item: CardProps) => (
             <div className="embla__slide" key={item.id}>
               <Card key={item.id} certificate={item}></Card>
             </div>

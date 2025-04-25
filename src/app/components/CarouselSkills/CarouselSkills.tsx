@@ -4,8 +4,14 @@ import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 import styles from "./carouselSkills.module.css"
 
+type Skill = {
+  image: string;
+  title: string;
+  description: string;
+};
+
 type PropType = {
-  slides: any[]
+  slides: Skill[]
   options?: EmblaOptionsType
 }
 

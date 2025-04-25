@@ -6,7 +6,11 @@ import { motion } from "framer-motion";
 import styles from "./ScrollDownButton.module.css";
 // import { a } from "framer-motion/client";
 
-export default function ScrollDownButton({ url }:any) {
+type ButtonProps = {
+  url: string;
+};
+
+export default function ScrollDownButton({ url }:ButtonProps) {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {

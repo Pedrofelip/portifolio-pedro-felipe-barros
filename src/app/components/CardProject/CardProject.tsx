@@ -1,6 +1,18 @@
 import styles from "./cardProject.module.css";
 
-export default function CardProject({ project }:any) {
+type Project = {
+  image: string;
+  title: string;
+  description: string;
+  url_rep?: string;
+  url_project?: string;
+};
+
+type CardProps = {
+  project: Project;
+};
+
+export default function CardProject({ project }: CardProps) {
   return (
     <article className={styles.project}>
       <div className={styles.grid_project}>

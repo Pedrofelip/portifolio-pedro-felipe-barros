@@ -14,6 +14,14 @@ import CardProject from "./components/CardProject/CardProject";
 import DownloadBtn from "./components/DownloadBtn/DownloadBtn";
 import ScrollBtn from "./components/ScrollBtn/ScrollBtn";
 
+type ProjectProps = {
+  image: string;
+  title: string;
+  description: string;
+  url_rep?: string;
+  url_project?: string;
+};
+
 export default function Home() {
   const {skills, projects, skills_sl } = useContext(Context);
 
@@ -124,8 +132,8 @@ export default function Home() {
             <h2 className={styles.h2_normal_section}>Projetos</h2>
             <i className="fa-solid fa-pen-to-square"></i>
             <div className={styles.grid_projects}>
-              {projects.map((item: any) => (
-                <CardProject project={item}></CardProject>
+              {projects.map((item: ProjectProps, index) => (
+                <CardProject project={item} key={index}></CardProject>
               ))}
             </div>
           </div>

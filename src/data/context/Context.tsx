@@ -1,11 +1,49 @@
 "use client";
 
-import { createContext, useState } from "react";
+import { createContext, ReactNode, useState } from "react";
 
-const Context = createContext({} as any);
+interface Certificate {
+  id: number;
+  image: string[];
+  tags: string[];
+  name: string;
+  description: string;
+  origin: string;
+  category: string;
+  producedBy: string;
+  weight: string;
+}
+
+interface Skill {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+}
+
+interface Project {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  url_rep?: string;
+}
+
+interface AppContextType {
+  certificates: Certificate[];
+  skills: Skill[];
+  skills_sl: Skill[];
+  projects: Project[];
+}
+
+interface ContextProviderProps {
+  children: ReactNode;
+}
+
+const Context = createContext<AppContextType>({} as AppContextType);
 export default Context;
 
-export function ContextProvider(props: any) {
+export function ContextProvider({ children }: ContextProviderProps) {
   const [certificates] = useState([
     {
       id: 1,
@@ -275,7 +313,7 @@ export function ContextProvider(props: any) {
         projects
       }}
     >
-      {props.children}
+      {children}
     </Context.Provider>
   );
 }
