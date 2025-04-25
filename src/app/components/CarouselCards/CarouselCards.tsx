@@ -44,13 +44,13 @@ const CarouselCards: React.FC<PropType> = (props) => {
 
   return (
     <section className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          {certificates.map((item: CardProps) => (
-            <div className="embla__slide" key={item.id}>
-              <Card key={item.id} certificate={item}></Card>
-            </div>
-          ))}
+        <div className="embla__viewport" ref={emblaRef}>
+          <div className="embla__container">
+            {certificates.map((item: CardProps) => (
+              <div className="embla__slide" key={item.id}>
+                <Card key={item.id} certificate={item}></Card>
+              </div>
+            ))}
         </div>
       </div>
 

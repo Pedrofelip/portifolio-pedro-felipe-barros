@@ -1,13 +1,19 @@
 .embla {
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
     height: 100%;
     margin: auto;
     --slide-height: 19rem;
-    --slide-spacing: 1.5rem;
+    --slide-spacing: 0.75rem;
     --slide-size: 275px;
     position: relative;
   }
   .embla__viewport {
+    width: 100%;
     overflow: hidden;
   }
   .embla__container {
@@ -19,7 +25,7 @@
   .front_gradient{
     background-image: linear-gradient(to right, rgba(255,0,0,0), var(--third_background), var(--third_background));
     z-index: 99;
-    width: 12%;
+    width: 15%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -27,10 +33,9 @@
   }
 
   .front_gradient_left{
-    display: block;
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), var(--third_background));
+    background-image: linear-gradient(to left, rgba(255,0,0,0), var(--third_background), var(--third_background));
     z-index: 99;
-    width: 10%;
+    width: 15%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -42,6 +47,7 @@
     flex: 0 0 var(--slide-size);
     min-width: 0;
     padding-left: var(--slide-spacing);
+    padding-right: var(--slide-spacing);
   }
   .embla__slide__number {
     box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
@@ -65,10 +71,11 @@
   }
 
   .arrow__buttons{
-    width: 109%;
+    z-index: 100;
+    width: 100%;
     position: absolute;
     top: 40%;
-    left: -5%;
+    left: 0;
   }
 
   .embla__buttons {
@@ -91,8 +98,8 @@
     padding: 0;
     margin: 0;
     box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     z-index: 1;
     border-radius: 50%;
     color: var(--text-body);
@@ -163,15 +170,14 @@
       height: 100%;
       margin: auto;
       --slide-height: 19rem;
-      --slide-spacing: 1.5rem;
       --slide-size: 275px;
       position: relative;
     }
 
     .front_gradient{
-      background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,0), var(--third_background));
+      background-image: linear-gradient(to right, rgba(255,0,0,0), var(--third_background), var(--third_background));
       z-index: 99;
-      width: 10%;
+      width: 15%;
       height: 100%;
       position: absolute;
       top: 0;
@@ -179,10 +185,9 @@
     }
 
     .front_gradient_left{
-      display: block;
-      background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), var(--third_background));
+      background-image: linear-gradient(to left, rgba(255,0,0,0), var(--third_background), var(--third_background));
       z-index: 99;
-      width: 10%;
+      width: 15%;
       height: 100%;
       position: absolute;
       top: 0;
@@ -193,11 +198,11 @@
       width: 100%;
       position: absolute;
       top: 45%;
-      left: -15;
+      left: 0;
     }
   
     .embla__buttons {
-      width: 108%;
+      width: 100%;
     }
     .embla__button {
       z-index: 100;
@@ -217,21 +222,24 @@
       height: 100%;
       margin: auto;
       --slide-height: 19rem;
-      --slide-spacing: 1.5rem;
       --slide-size: 275px;
       position: relative;
     }
 
     .front_gradient{
-      display: block;
-      width: 5%;
+      background-image: linear-gradient(to right, rgba(255,0,0,0), var(--third_background), var(--third_background));
+      z-index: 99;
+      width: 15%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
 
     .front_gradient_left{
-      display: block;
-      background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), var(--third_background));
+      background-image: linear-gradient(to left, rgba(255,0,0,0), var(--third_background), var(--third_background));
       z-index: 99;
-      width: 10%;
+      width: 15%;
       height: 100%;
       position: absolute;
       top: 0;
@@ -242,15 +250,15 @@
       width: 100%;
       position: absolute;
       top: 45%;
-      left: -4%;
+      left: 0;
     }
   
     .embla__buttons {
-      width: 108%;
+      width: 100%;
     }
     .embla__button {
       z-index: 100;
-      background-color: var(--white);
+      /* background-color: var(--white); */
       cursor: pointer;
       box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
       width: 2rem;
