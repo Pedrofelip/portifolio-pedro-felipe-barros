@@ -1,16 +1,16 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+// import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import styles from './DownloadBtn.module.css';
+// import styles from './DownloadBtn.module.css';
 import global from '../../page.module.css'
 
 // const balloonId = 0;
 
 export default function DownloadBtn() {
-  const [balloons, setBalloons] = useState([]);
-  const [animating, setAnimating] = useState(false);
+  const [, setBalloons] = useState([]);
+  const [, setAnimating] = useState(false);
 
   const handleClick = () => {
     const link = document.createElement('a');
