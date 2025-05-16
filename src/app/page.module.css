@@ -79,9 +79,9 @@
   position: absolute;
   height: 100%;
   border-left: 2px solid var(--white);
-  right: -10;
+  right: 0;
   animation: cursor 1s infinite, write 20s steps(15) infinite;
-  width: calc(100% + 18px);
+  width: 100%;
   background-color: var(--second_background);
 }
 
@@ -91,7 +91,7 @@
   }
 
   5%,20%,25%,40%,45%,60%,65%,80%,85%{
-    width: calc(100% + 18px);
+    width: 100%;
   }
 }
 
@@ -976,13 +976,14 @@
   }
   
   .text_content > h2 > span::after{
+    width: 100%;
     content: "";
     position: absolute;
     height: 100%;
     border-left: 2px solid var(--white);
-    right: -10;
+    right: 0;
     animation: cursor 1s infinite, write 20s steps(15) infinite;
-    width: calc(100% + 18px);
+    width: 100%;
     background-color: var(--second_background);
   }
   
@@ -992,7 +993,7 @@
     }
   
     5%,20%,25%,40%,45%,60%,65%,80%,85%{
-      width: calc(100% + 18px);
+      width: 100%;
     }
   }
   

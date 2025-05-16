@@ -11,12 +11,12 @@ type ButtonProps = {
 };
 
 export default function ScrollDownButton({ url }:ButtonProps) {
-  const [showButton, setShowButton] = useState(false);
+  const [showButton, setShowButton] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setShowButton(true), 0); // Aparece após 2s
-    return () => clearTimeout(timer);
-  }, []);
+ // useEffect(() => {
+   // const timer = setTimeout(() => setShowButton(true), 0); // Aparece após 2s
+   // return () => clearTimeout(timer);
+ // }, []);
 
   return (
     <a href={url}>
