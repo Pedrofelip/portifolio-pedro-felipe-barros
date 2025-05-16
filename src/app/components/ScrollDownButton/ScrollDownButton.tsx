@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 // import { ChevronDown } from "lucide-react";
 import styles from "./ScrollDownButton.module.css";
@@ -11,7 +11,7 @@ type ButtonProps = {
 };
 
 export default function ScrollDownButton({ url }:ButtonProps) {
-  const [showButton, setShowButton] = useState(true);
+  const [showButton] = useState(true);
 
  // useEffect(() => {
    // const timer = setTimeout(() => setShowButton(true), 0); // Aparece após 2s
