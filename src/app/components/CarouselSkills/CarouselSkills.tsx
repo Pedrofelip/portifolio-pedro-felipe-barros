@@ -2,7 +2,6 @@ import React from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 // import Autoplay from 'embla-carousel-autoplay'
 import AutoScroll from 'embla-carousel-auto-scroll'
-import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react'
 import styles from "./carouselSkills.module.css"
 
