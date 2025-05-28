@@ -120,8 +120,8 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.fourth_section_grid_carousel}>
-              <CarouselSkills slides={SLIDES} options={OPTIONS_SKILLS} />
-              <CarouselSkills slides={SLIDES_SL} options={OPTIONS_SKILLS} />
+              <CarouselSkills slides={SLIDES} options={OPTIONS_SKILLS} directionSlide={"forward"}/>
+              <CarouselSkills slides={SLIDES_SL} options={OPTIONS_SKILLS} directionSlide={"backward"}/>
             </div>
           </div>
         </section>

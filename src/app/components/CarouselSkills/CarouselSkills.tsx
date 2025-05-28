@@ -1,6 +1,8 @@
 import React from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
-import Autoplay from 'embla-carousel-autoplay'
+// import Autoplay from 'embla-carousel-autoplay'
+import AutoScroll from 'embla-carousel-auto-scroll'
+import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react'
 import styles from "./carouselSkills.module.css"
 
@@ -13,11 +15,12 @@ type Skill = {
 type PropType = {
   slides: Skill[]
   options?: EmblaOptionsType
+  directionSlide: "forward" | "backward" | undefined
 }
 
 const CarouselSkills: React.FC<PropType> = (props) => {
-  const { slides, options } = props
-  const [emblaRef] = useEmblaCarousel(options, [Autoplay()])
+  const { slides, options, directionSlide } = props
+  const [emblaRef] = useEmblaCarousel(options, [AutoScroll({ playOnInit: true, speed: 1, stopOnInteraction: false, direction: directionSlide})])
 
   return (
     <section className={styles.embla}>

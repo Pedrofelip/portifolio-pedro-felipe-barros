@@ -14,7 +14,7 @@
   background-color: var(--second_background);
   width: 100%;
   height: 100vh;
-  max-height: 1000px;
+  /* max-height: 1000px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -457,22 +457,30 @@
   }
   
   .text_content > h3 {
+    font-size: 28px !important;
+    font-weight: 700;
     margin-bottom: 25px;
   }
   
   .text_content > h1 {
+    font-size: 50px !important;
+    font-weight: 700;
     margin-bottom: 25px;
   }
   
   .text_content > h2 {
-    margin-bottom: 25px;
+    font-size: 30px !important;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px !important;
   }
   
   .text_content > h2 > span {
-    font-size: 60px;
+    font-size: 60px !important;
     font-weight: 700;
     margin-bottom: 30px;
-    letter-spacing: 0px;
+    letter-spacing: 0px !important;
   }
   
   .grid_button{
@@ -506,10 +514,10 @@
   }
 }
 
-@media (max-width:600px) {
+@media (max-width:520px) AND (min-width:401px){
   .first_section {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -518,45 +526,99 @@
   .content_first_section {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     /* background-color: aqua; */
   }
   
   .text_content {
     width: 100%;
-    height: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     /* background-color: aqua; */
   }
   
   .text_content > h3 {
-    font-size: 16px;
+    font-size: 28px !important;
     font-weight: 700;
-    /* margin-bottom: 25px; */
+    margin-bottom: 25px;
   }
   
   .text_content > h1 {
-    font-size: 50px;
+    font-size: 50px !important;
     font-weight: 700;
-    /* margin-bottom: 25px; */
+    margin-bottom: 25px;
   }
   
   .text_content > h2 {
-    font-size: 25px;
+    font-size: 32px !important;
     font-weight: 700;
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 35px; */
+    margin-bottom: 35px;
   }
   
   .text_content > h2 > span {
-    font-size: 60px;
+    font-size: 70px !important;
     font-weight: 700;
     margin-bottom: 30px;
-    letter-spacing: 0px;
+    letter-spacing: 0px !important;
+  }
+}
+
+@media (max-width:600px) {
+  .first_section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content_first_section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+  }
+  
+  .text_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+  }
+  
+  .text_content > h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  .text_content > h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  .text_content > h2 {
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+  
+  .text_content > h2 > span {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 6px;
   }
   
   .text_content > h2 > span::before{
@@ -606,7 +668,7 @@
   
   .grid_button{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: row;
   }
 
@@ -634,25 +696,8 @@
   }
   
   .img_content {
-    width: 100%;
-    height: 35%;
-    display: flex;
-    align-items: flex-start;
-    /* margin-bottom: 80px; */
-    /* background-color: aqua; */
-    /* display: none; */
+    display: none;
   }
-  
-  .img_content > img {
-    width: 100%;
-    height: 100%;
-    -webkit-user-drag: none;
-    user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* IE/Edge */
-  }
-
   /* --------------------------------- */
 
   .second_section {
@@ -944,24 +989,24 @@
   
   .text_content {
     width: 100%;
-    height: 65%;
-    justify-content: space-between;
+    height: 0%;
+    justify-content: center;
     /* background-color: aqua; */
   }
   
   .text_content > h3 {
     font-size: var(--fs-1);
-    /* margin-bottom: 25px; */
+    margin-bottom: 30px;
   }
   
   .text_content > h1 {
     font-size: var(--fs-4);
-    /* margin-bottom: 25px; */
+    margin-bottom: 30px;
   }
   
   .text_content > h2 {
     font-size: var(--fs-2);
-    /* margin-bottom: 35px; */
+    margin-bottom: 40px;
   }
   
   .text_content > h2 > span {

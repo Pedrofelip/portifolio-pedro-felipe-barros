@@ -1,0 +1,210 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Alto para garantir sobreposição */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modalContent {
+  background: var(--white);
+  border-radius: 12px;
+  /* padding: 2rem; */
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  position: relative;
+  animation: scaleIn 0.3s ease;
+  z-index: 10000;
+}
+
+.headerModal{
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(140 140 140 / .2)
+}
+
+.headerModal > p{
+  font-family: var(--font);
+  font-weight: 500;
+  color: black;
+  font-size: 1rem;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.content > div{
+  padding: 0 15px;
+  width: 35%;
+  /* background-color: aqua; */
+}
+
+.content > div > h2 {
+  font-family: var(--font);
+  font-weight: 700;
+  color: black;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.content > div > p {
+  font-family: var(--font);
+  font-weight: 200;
+  color: black;
+  font-size: 1rem;
+}
+
+.modalImage {
+  width: 65%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 0 0 0 12px;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.grid_tags{
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0 20px 0;
+  pointer-events: none;
+}
+
+.tags{
+  display: block;
+  padding: 4px 9px;
+  margin-right: 7px;
+  border-radius: 25px;
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 10px;
+}
+
+/* Cores específicas */
+.javascript {
+  /* background-color: #f7de1e44; */
+  color: #F7DF1E;
+  border: 1px solid #F7DF1E;
+}
+
+.typescript {
+  /* background-color: #3777ab44; */
+  color: #3776AB;
+  border: 1px solid #3776AB;
+}
+
+.react {
+  /* background-color: #61dafb44; */
+  color: #61DAFB;
+  border: 1px solid #61DAFB;
+}
+
+.angular {
+  /* background-color: #dd003044; */
+  color: #DD0031;
+  border: 1px solid #DD0031;
+}
+
+.java {
+  /* background-color: #b071192d; */
+  color: #b07219;
+  border: 1px solid #b07219;
+}
+
+.python {
+  /* background-color: #3777ab44; */
+  color: #3776AB;
+  border: 1px solid #3776AB;
+}
+
+/* Tag default */
+.default {
+  /* background-color: #66666644; */
+  color: #666;
+  border: 1px solid #666;
+}
+
+@keyframes fadeIn {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width:750px) {
+  .modalContent {
+    width: 80%;
+  }
+  
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+  }
+  
+  .content > div{
+    padding: 0 15px;
+    width: 100%;
+    /* background-color: aqua; */
+  }
+  
+  .content > div > h2 {
+    font-family: var(--font);
+    font-weight: 700;
+    color: black;
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .content > div > p {
+    font-family: var(--font);
+    font-weight: 200;
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .modalImage {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 0;
+  }
+  
+  .closeButton {
+    font-size: 1.5rem;
+  }
+}

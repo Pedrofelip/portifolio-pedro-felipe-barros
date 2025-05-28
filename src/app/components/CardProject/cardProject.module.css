@@ -124,7 +124,7 @@
     color: black;
   }
 
-  @media (max-width:400px){
+  @media (max-width:420px){
 
     .grid_button{
       display: flex;
@@ -200,7 +200,7 @@
     .grid_button{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: start;
     }
     
     .red_btn{
@@ -209,6 +209,7 @@
         padding: 5px 10px;
         cursor: pointer;
         border-radius: 6px;
+        margin-right: 10px;
       }
     
       .red_btn > i{
