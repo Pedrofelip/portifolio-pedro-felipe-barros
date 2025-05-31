@@ -23,6 +23,7 @@
   position: relative;
   animation: scaleIn 0.3s ease;
   z-index: 10000;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.103);
 }
 
 .headerModal{
@@ -80,6 +81,7 @@
   font-size: 2rem;
   cursor: pointer;
   z-index: 10001;
+  color: black;
 }
 
 .grid_tags{

@@ -24,8 +24,8 @@ export default function DownloadBtn() {
     audio2.play();
 
     const link = document.createElement('a');
-    link.href = '/arquivo.pdf';
-    link.download = 'arquivo.pdf';
+    link.href = '/CURRÍCULO - PEDRO FELIPE BARROS DA SILVA.pdf';
+    link.download = 'CURRÍCULO - PEDRO FELIPE BARROS DA SILVA.pdf';
     link.click();
 
     setAnimating(true);

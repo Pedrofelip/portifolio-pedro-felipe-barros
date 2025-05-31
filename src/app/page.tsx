@@ -23,9 +23,9 @@ type ProjectProps = {
 };
 
 export default function Home() {
-  const {skills, projects, skills_sl } = useContext(Context);
+  const { skills, projects, skills_sl } = useContext(Context);
 
-  const OPTIONS: EmblaOptionsType = { align: "center", loop: true};
+  const OPTIONS: EmblaOptionsType = { align: "center", loop: true };
 
   const OPTIONS_SKILLS: EmblaOptionsType = {
     align: "start",
@@ -42,7 +42,10 @@ export default function Home() {
       <main className={styles.main}>
         <section className={`${styles.first_section}`}>
           <Header></Header>
-          <div className={`${styles.grid_container} ${styles.content_first_section}`} id="home">
+          <div
+            className={`${styles.grid_container} ${styles.content_first_section}`}
+            id="home"
+          >
             <div className={styles.text_content}>
               <h3>Prazer, eu sou o</h3>
               <h1>pedro felipe</h1>
@@ -53,7 +56,10 @@ export default function Home() {
                 <a href="#contact" className={styles.red_btn}>
                   Envie uma mensagem
                 </a>
-                <a href="#about_section" className={styles.transparent_btn_white}>
+                <a
+                  href="#about_section"
+                  className={styles.transparent_btn_white}
+                >
                   Sobre mim
                 </a>
               </div>
@@ -75,18 +81,22 @@ export default function Home() {
               <div>
                 <h2 className={styles.h2_normal_section}>Sobre mim</h2>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
-                  laudantium quae pariatur similique repudiandae voluptas sint
-                  dolorum ullam nostrum tenetur fuga numquam eveniet, consequuntur
-                  rem cupiditate vero explicabo dicta a neque rerum natus non
-                  necessitatibus ducimus temporibus! Rerum odit repellat
-                  reiciendis ipsa iste amet ipsum deserunt maxime sed, adipisci
-                  aperiam.
+                  Olá, me chamo Pedro Felipe Barros da Silva, tenho 22 anos e sou um desenvolvedor
+                  Full-stack recém-graduado em “Análise e Desenvolvimento de Sistemas” pela FIAP, com formação técnica em “Análise e Desenvolvimento de Sistemas” e “Desenhista de Páginas para Web” pelo SENAI.
+                  <br/><br/>
+                  Moro em São Paulo, capital, e sou motivado por novos desafios, sempre buscando evoluir e agregar valor por onde passo, com foco em colaboração, adaptação e entrega de resultados.
+                  <br/><br/>
+                  Acredito que um pensamento que me resume como pessoa é que todo dia é um bom dia para aprender algo novo e se aprimorar, estou em constante evolução e sempre buscando a minha melhor versão então independente da situação acredito que sempre tem algo bom que podemos aprender no momento
                 </p>
               </div>
-              <div className={`${styles.grid_button} ${styles.grid_button_center}`}>
+              <div
+                className={`${styles.grid_button} ${styles.grid_button_center}`}
+              >
                 <DownloadBtn></DownloadBtn>
-                <a href="#" className={styles.transparent_btn_black}>
+                <a
+                  href="#about_section"
+                  className={styles.transparent_btn_black}
+                >
                   Vídeo apresentação
                 </a>
               </div>
@@ -120,8 +130,16 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.fourth_section_grid_carousel}>
-              <CarouselSkills slides={SLIDES} options={OPTIONS_SKILLS} directionSlide={"forward"}/>
-              <CarouselSkills slides={SLIDES_SL} options={OPTIONS_SKILLS} directionSlide={"backward"}/>
+              <CarouselSkills
+                slides={SLIDES}
+                options={OPTIONS_SKILLS}
+                directionSlide={"forward"}
+              />
+              <CarouselSkills
+                slides={SLIDES_SL}
+                options={OPTIONS_SKILLS}
+                directionSlide={"backward"}
+              />
             </div>
           </div>
         </section>
@@ -139,15 +157,39 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.sixth_section} id="contact">
-          <div  className={`${styles.grid_container} ${styles.content_sixth_section}`}>
+          <div
+            className={`${styles.grid_container} ${styles.content_sixth_section}`}
+          >
             <h2 className={styles.h2_normal_section}>Entre em contato</h2>
             <p>Estou disponivel atraves de todos os links abaixo</p>
             <nav className={styles.contact_links}>
               <ul>
-                <li><a href="mailto:pedrofelipbarros@gmail.com" target="_blank"><i className="fa-brands fa-google"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/pedro-felipe-barros-da-silva/" target="_blank"><i className="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/Pedrofelip" target="_blank"><i className="fa-brands fa-github"></i></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5511982835090" target="_blank"><i className="fa-brands fa-whatsapp"></i></a></li>
+                <li>
+                  <a href="mailto:pedrofelipbarros@gmail.com" target="_blank">
+                    <i className="fa-brands fa-google"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/pedro-felipe-barros-da-silva/"
+                    target="_blank"
+                  >
+                    <i className="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Pedrofelip" target="_blank">
+                    <i className="fa-brands fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=5511982835090"
+                    target="_blank"
+                  >
+                    <i className="fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
