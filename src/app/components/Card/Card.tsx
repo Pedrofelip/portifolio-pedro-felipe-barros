@@ -4,6 +4,7 @@ import CertificateModal from "../CertificateModal/CertificateModal";
 
 type Certificate = {
   name: string;
+  institution: string;
   description: string;
   image: string[];
   tags?: string[];
@@ -25,9 +26,30 @@ export default function Card({ certificate }: CardProps) {
     javascript: styles.javascript,
     typescript: styles.typescript,
     react: styles.react,
+    "react-native": styles["react-native"],
     angular: styles.angular,
+    vue: styles.vue,
+    html: styles.html,
+    css: styles.css,
+    nodejs: styles.nodejs,
     java: styles.java,
     python: styles.python,
+    php: styles.php,
+    csharp: styles.csharp,
+    ruby: styles.ruby,
+    go: styles.go,
+    swift: styles.swift,
+    kotlin: styles.kotlin,
+    mysql: styles.mysql,
+    postgresql: styles.postgresql,
+    mongodb: styles.mongodb,
+    docker: styles.docker,
+    sql: styles.sql,
+    git: styles.git,
+    github: styles.github,
+    next: styles.next,
+    vite: styles.vite,
+    aws: styles.aws,
   };
 
   return (
@@ -58,12 +80,13 @@ export default function Card({ certificate }: CardProps) {
 
       {isOpen && (
         <CertificateModal
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-        title={certificate.name}
-        description={certificate.description}
-        image={certificate.image[0]}
-        tags={tags}
+          isOpen={isOpen}
+          onClose={() => setIsOpen(false)}
+          title={certificate.name}
+          institution={certificate.institution}
+          description={certificate.description}
+          image={certificate.image[0]}
+          tags={tags}
         />
       )}
     </>

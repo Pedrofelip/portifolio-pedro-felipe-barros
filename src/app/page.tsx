@@ -75,18 +75,30 @@ export default function Home() {
             className={`${styles.grid_container} ${styles.content_second_section}`}
           >
             <div className={styles.img_content_second_section}>
-              <img src="./Code typing-bro.svg" alt="" />
+              {/* <img src="./Code typing-bro.svg" alt="" /> */}
+              <img src="./pedro-blobs-dois (3).jpeg" alt="" />
             </div>
             <div className={styles.text_content_second_section}>
               <div>
                 <h2 className={styles.h2_normal_section}>Sobre mim</h2>
                 <p>
-                  Olá, me chamo Pedro Felipe Barros da Silva, tenho 22 anos e sou um desenvolvedor
-                  Full-stack recém-graduado em “Análise e Desenvolvimento de Sistemas” pela FIAP, com formação técnica em “Análise e Desenvolvimento de Sistemas” e “Desenhista de Páginas para Web” pelo SENAI.
-                  <br/><br/>
-                  Moro em São Paulo, capital, e sou motivado por novos desafios, sempre buscando evoluir e agregar valor por onde passo, com foco em colaboração, adaptação e entrega de resultados.
-                  <br/><br/>
-                  Acredito que um pensamento que me resume como pessoa é que todo dia é um bom dia para aprender algo novo e se aprimorar, estou em constante evolução e sempre buscando a minha melhor versão então independente da situação acredito que sempre tem algo bom que podemos aprender no momento
+                  Olá, me chamo Pedro Felipe Barros da Silva, tenho 22 anos e
+                  sou um desenvolvedor Full-stack recém-graduado em “Análise e
+                  Desenvolvimento de Sistemas” pela FIAP, com formação técnica
+                  em “Análise e Desenvolvimento de Sistemas” e “Desenhista de
+                  Páginas para Web” pelo SENAI.
+                  <br />
+                  <br />
+                  Moro em São Paulo, capital, e sou motivado por novos desafios,
+                  sempre buscando evoluir e agregar valor por onde passo, com
+                  foco em colaboração e entrega de resultados.
+                  <br />
+                  <br />
+                  Um pensamento que me resume como pessoa é que todo dia é um
+                  bom dia para aprender algo novo e se aprimorar, estou em
+                  constante evolução e sempre buscando a minha melhor versão
+                  então independente da situação acredito que sempre existirá
+                  algo bom que podemos aprender.
                 </p>
               </div>
               <div
@@ -120,13 +132,19 @@ export default function Home() {
               <h2 className={styles.h2_normal_section}>Habilidades</h2>
               <i className="fa-solid fa-gears"></i>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
-                ullam laboriosam provident perferendis eligendi voluptatum optio
-                ducimus, nostrum sapiente libero officiis quia unde vero quae
-                quisquam dolore dolorem quo quidem aut nihil sint velit.
-                Voluptates nobis tenetur maiores explicabo quo ratione
-                exercitationem quibusdam dignissimos. Obcaecati iusto odio a
-                nobis cupiditate!
+                Ao longo da minha jornada como desenvolvedor, venho construindo
+                uma base sólida em diversas tecnologias. Tenho experiência com<span>HTML5, CSS3, JavaScript, React, React Native, Next.js e Angular</span>,
+                além de conhecimento em criações e manutenções de API's com<span>C#, .NET, Entity Framework, Java e
+                Spring Boot.</span> Também trabalho com<span>PL/SQL e SQL (SQL Server, MySQL, Oracle SQL)</span> para a interação e manipulação em bancos de dados.  
+                <br />
+                <br />
+                Utilizo <span>Git e GitHub</span> para versionamento e controle de versão e para apoiar no design de interfaces mais intuitivas e funcionais atuo com <span>Figma</span>.
+                {/* <br />
+                <br />
+                No lado pessoal, sou comunicativo, proativo, tenho facilidade
+                para trabalhar em equipe e estou sempre buscando aprender e
+                evoluir. Gosto de ambientes colaborativos e de contribuir com
+                soluções práticas e eficientes. */}
               </p>
             </div>
             <div className={styles.fourth_section_grid_carousel}>

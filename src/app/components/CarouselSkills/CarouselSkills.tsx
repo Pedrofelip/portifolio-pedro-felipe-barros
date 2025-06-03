@@ -1,9 +1,9 @@
-import React from 'react'
-import { EmblaOptionsType } from 'embla-carousel'
+import React from "react";
+import { EmblaOptionsType } from "embla-carousel";
 // import Autoplay from 'embla-carousel-autoplay'
-import AutoScroll from 'embla-carousel-auto-scroll'
-import useEmblaCarousel from 'embla-carousel-react'
-import styles from "./carouselSkills.module.css"
+import AutoScroll from "embla-carousel-auto-scroll";
+import useEmblaCarousel from "embla-carousel-react";
+import styles from "./carouselSkills.module.css";
 
 type Skill = {
   image: string;
@@ -12,17 +12,25 @@ type Skill = {
 };
 
 type PropType = {
-  slides: Skill[]
-  options?: EmblaOptionsType
-  directionSlide: "forward" | "backward" | undefined
-}
+  slides: Skill[];
+  options?: EmblaOptionsType;
+  directionSlide: "forward" | "backward" | undefined;
+};
 
 const CarouselSkills: React.FC<PropType> = (props) => {
-  const { slides, options, directionSlide } = props
-  const [emblaRef] = useEmblaCarousel(options, [AutoScroll({ playOnInit: true, speed: 1, stopOnInteraction: false, direction: directionSlide})])
+  const { slides, options, directionSlide } = props;
+  const [emblaRef] = useEmblaCarousel(options, [
+    AutoScroll({
+      playOnInit: true,
+      speed: 0.8,
+      stopOnInteraction: false,
+      direction: directionSlide,
+    }),
+  ]);
 
   return (
     <section className={styles.embla}>
+      <div className={styles.front_gradient_left}></div>
       <div className={styles.embla__viewport} ref={emblaRef}>
         <div className={styles.embla__container}>
           {slides.map((item, index) => (
@@ -36,8 +44,9 @@ const CarouselSkills: React.FC<PropType> = (props) => {
           ))}
         </div>
       </div>
+      <div className={styles.front_gradient}></div>
     </section>
-  )
-}
+  );
+};
 
-export default CarouselSkills
+export default CarouselSkills;

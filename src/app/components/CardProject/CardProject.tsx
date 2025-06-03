@@ -5,7 +5,7 @@ type Project = {
   title: string;
   description: string;
   url_rep?: string;
-  url_project?: string;
+  url_site?: string;
 };
 
 type CardProps = {
@@ -28,12 +28,19 @@ export default function CardProject({ project }: CardProps) {
             <a href={project.url_rep} className={styles.red_btn}>
               Repositorio <i className="fa-brands fa-github"></i>
             </a>
-            <a
-              href={project.url_project}
-              className={styles.transparent_btn_black}
-            >
-              Ver o projeto
-            </a>
+            {
+              project.url_site == "" ? (<a
+                href={project.url_site}
+                className={styles.disable_btn}
+              >
+                Visitar site
+              </a>) : (<a
+                href={project.url_site}
+                className={styles.transparent_btn_black}
+              >
+                Visitar site
+              </a>)
+            }
           </div>
         </div>
       </div>

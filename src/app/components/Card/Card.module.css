@@ -58,6 +58,7 @@
   flex-direction: row;
   margin-bottom: 15px;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .tags{
@@ -68,25 +69,43 @@
   font-family: var(--font);
   font-weight: 600;
   font-size: 10px;
+  white-space: nowrap;
 }
 
-/* Cores específicas */
-.javascript {
-  /* background-color: #f7de1e44; */
-  color: #F7DF1E;
-  border: 1px solid #F7DF1E;
-}
-
-.typescript {
-  /* background-color: #3777ab44; */
-  color: #3776AB;
-  border: 1px solid #3776AB;
-}
-
-.react {
+.react-native {
   /* background-color: #61dafb44; */
   color: #61DAFB;
   border: 1px solid #61DAFB;
+}
+
+.git {
+  /* background-color: #f0503044; */
+  color: #F05030;
+  border: 1px solid #F05030;
+}
+
+.github {
+  /* background-color: #18171744; */
+  color: #181717;
+  border: 1px solid #181717;
+}
+
+.next {
+  /* background-color: #00000044; */
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.vite {
+  /* background-color: #646cff44; */
+  color: #646CFF;
+  border: 1px solid #646CFF;
+}
+
+.aws {
+  /* background-color: #ff990044; */
+  color: #FF9900;
+  border: 1px solid #FF9900;
 }
 
 .angular {
@@ -95,16 +114,124 @@
   border: 1px solid #DD0031;
 }
 
-.java {
-  /* background-color: #b071192d; */
-  color: #b07219;
-  border: 1px solid #b07219;
+.react {
+  /* background-color: #61dafb44; */
+  color: #61DAFB;
+  border: 1px solid #61DAFB;
+}
+
+.vue {
+  /* background-color: #42b88344; */
+  color: #42B883;
+  border: 1px solid #42B883;
+}
+
+.javascript {
+  /* background-color: #f7df1e44; */
+  color: #F7DF1E;
+  border: 1px solid #F7DF1E;
+}
+
+.typescript {
+  /* background-color: #3178c644; */
+  color: #3178C6;
+  border: 1px solid #3178C6;
+}
+
+.html {
+  /* background-color: #e34f2644; */
+  color: #E34F26;
+  border: 1px solid #E34F26;
+}
+
+.css {
+  /* background-color: #2965f144; */
+  color: #2965F1;
+  border: 1px solid #2965F1;
+}
+
+.nodejs {
+  /* background-color: #68a06344; */
+  color: #68A063;
+  border: 1px solid #68A063;
 }
 
 .python {
-  /* background-color: #3777ab44; */
+  /* background-color: #3776ab44; */
   color: #3776AB;
   border: 1px solid #3776AB;
+}
+
+.java {
+  /* background-color: #00739644; */
+  color: #007396;
+  border: 1px solid #007396;
+}
+
+.php {
+  /* background-color: #8892be44; */
+  color: #8892BE;
+  border: 1px solid #8892BE;
+}
+
+.csharp {
+  /* background-color: #23912044; */
+  color: #239120;
+  border: 1px solid #239120;
+}
+
+.ruby {
+  /* background-color: #cc342d44; */
+  color: #CC342D;
+  border: 1px solid #CC342D;
+}
+
+.go {
+  /* background-color: #00add844; */
+  color: #00ADD8;
+  border: 1px solid #00ADD8;
+}
+
+.swift {
+  /* background-color: #fa734344; */
+  color: #FA7343;
+  border: 1px solid #FA7343;
+}
+
+.kotlin {
+  /* background-color: #7f52ff44; */
+  color: #7F52FF;
+  border: 1px solid #7F52FF;
+}
+
+.sql {
+  /* background-color: #e38c0044; */
+  color: #E38C00;
+  border: 1px solid #E38C00;
+}
+
+.mysql {
+  /* background-color: #4479a144; */
+  color: #4479A1;
+  border: 1px solid #4479A1;
+}
+
+.postgresql {
+  /* background-color: #33679144; */
+  color: #336791;
+  border: 1px solid #336791;
+}
+
+.mongodb {
+  /* background-color: #47a24844; */
+  color: #47A248;
+  border: 1px solid #47A248;
+}
+
+.docker {
+  /* background-color: #2496ed44; */
+  color: #2496ED;
+  border: 1px solid #2496ED;
 }
 
 
@@ -120,11 +247,11 @@
     font-family: var(--font);
   font-weight: 600;
   color: black;
-  font-size: var(--font_size);
+  font-size: 1rem;
   margin-bottom: 15px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
   overflow: hidden;
 }
 

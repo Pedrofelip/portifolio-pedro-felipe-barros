@@ -21,6 +21,7 @@ type PropType = {
 type CardProps = {
   id: number;
   name: string;
+  institution: string;
   description: string;
   image: string[];
   tags?: string[];

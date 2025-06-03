@@ -4,6 +4,27 @@
     --slide-height: 19rem;
     --slide-spacing: 1rem;
     --slide-size: 190px;
+    position: relative;
+  }
+
+  .front_gradient{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,0), var(--white));
+    z-index: 99;
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .front_gradient_left{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), var(--white));
+    z-index: 99;
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .embla__viewport {
@@ -59,7 +80,7 @@
     font-size: 0.8rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 4 ;
     overflow: hidden;
   }
 
