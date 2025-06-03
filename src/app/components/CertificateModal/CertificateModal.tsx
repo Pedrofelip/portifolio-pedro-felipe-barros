@@ -76,7 +76,9 @@ const CertificateModal: React.FC<CertificateModalProps> = ({
           <img src={image} alt={title} className={styles.modalImage} />
           <div>
             <h2>{title}</h2>
-            <p><strong>Instituição:</strong> {institution}</p>
+            <p>
+              <strong>Instituição:</strong> {institution}
+            </p>
 
             {/* <h4>Competências</h4> */}
             <div className={styles.grid_tags}>

@@ -46,11 +46,21 @@ export function ContextProvider({ children }: ContextProviderProps) {
     {
       id: 10,
       image: ["./certificados/Diploma tecnico ads.jpeg"],
-      tags: ["HTML", "CSS", "JavaScript", "React", "React Native", "Csharp", "Entity framework", "SQL", "GIT", "GitHub"],
+      tags: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "React Native",
+        "Csharp",
+        "Entity framework",
+        "SQL",
+        "GIT",
+        "GitHub",
+      ],
       name: "Diploma Técnico em Desenvolvimento de Sistemas",
       institution: "SENAI",
-      description:
-        "",
+      description: "",
     },
     {
       id: 11,
@@ -58,55 +68,57 @@ export function ContextProvider({ children }: ContextProviderProps) {
       tags: ["HTML", "CSS", "JavaScript", "React", "Figma"],
       name: "Certificado de Qualificação Profissional em Desenhista de Páginas para Web",
       institution: "SENAI",
-      description:
-        "",
+      description: "",
     },
     {
       id: 1,
       image: ["./certificados/Certificado Big Data.png"],
-      tags: ["Python", "SQL",],
+      tags: ["Python", "SQL"],
       name: "Big Data & Analytics",
       institution: "FIAP",
-      description:
-        "",
+      description: "",
     },
     {
       id: 2,
       image: [
         "https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/128046/745f3f06aa9f93e303c2230d996806a0/certificado.png",
       ],
-      tags: ["SQL", "PL/SQL",],
+      tags: ["SQL", "PL/SQL"],
       name: "Banco de Dados Oracle",
       institution: "FIAP",
-      description:
-        "",
+      description: "",
     },
     {
       id: 3,
       image: ["./certificados/Certificado IA e IoT.png"],
-      tags: ["Arduino", "Node-RED", "IBM Watson", "Python ",],
+      tags: ["Arduino", "Node-RED", "IBM Watson", "Python "],
       name: "Certificado de Qualificação Profissional em Estratégia e Inovação Tecnológica com aplicações em IA e IoT",
       institution: "FIAP",
-      description:
-        "",
+      description: "",
     },
     {
       id: 4,
       image: ["./certificados/Designer Web 2.0.png"],
-      tags: ["JavaScript", "React", "Next.js", "Vite", "Figma", "CSS", "Tailwind"],
+      tags: [
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Vite",
+        "Figma",
+        "CSS",
+        "Tailwind",
+      ],
       name: "Certificado de Qualificação Profissional em Desenvolvimento e Designer Web 2.0",
       institution: "FIAP",
-      description:
-        "",
+      description: "",
     },
     {
       id: 5,
       image: ["./certificados/Certificado aplicacoes moveis.png"],
-      tags: ["React Native", "Kotlin",],
+      tags: ["React Native", "Kotlin"],
       name: "Certificado de Qualificação Profissional em Desenvolvimento de Aplicações Móveis",
       institution: "FIAP",
-      description:
-        "",
+      description: "",
     },
     {
       id: 6,
@@ -114,8 +126,7 @@ export function ContextProvider({ children }: ContextProviderProps) {
       tags: ["HTML", "CSS", "JavaScript", "Figma"],
       name: "Certificado de Qualificação Profissional em Análise de Sistemas e Prototipação Web",
       institution: "FIAP",
-      description:
-        "",
+      description: "",
     },
     // {
     //   id: 7,
@@ -142,11 +153,10 @@ export function ContextProvider({ children }: ContextProviderProps) {
     {
       id: 9,
       image: ["./certificados/Introducao AWS.png"],
-      tags: ["Cloud Service", "AWS",],
+      tags: ["Cloud Service", "AWS"],
       name: "Curso 1 - Introdução à Computação em Nuvem e AWS",
       institution: "Darede Academy",
-      description:
-        "",
+      description: "",
     },
   ]);
 
@@ -310,8 +320,7 @@ export function ContextProvider({ children }: ContextProviderProps) {
       id: 1,
       image: "./img_projects/BG-BOB.png",
       title: "Best of Brazil",
-      description:
-        "",
+      description: "",
       url_rep: "https://github.com/Pedrofelip/Best-of-brazil",
       url_site: "",
     },
@@ -319,8 +328,7 @@ export function ContextProvider({ children }: ContextProviderProps) {
       id: 2,
       image: "./img_projects/BG-PORT.png",
       title: "Portfólio Pedro Felipe",
-      description:
-        "",
+      description: "",
       url_rep: "https://github.com/Pedrofelip/portifolio-pedro-felipe-barros",
       url_site: "https://portfolio-pedro-felipe-barros.vercel.app/",
     },
@@ -328,18 +336,15 @@ export function ContextProvider({ children }: ContextProviderProps) {
       id: 3,
       image: "./img_projects/BG-SOUL.png",
       title: "Soul Brokers",
-      description:
-        "",
+      description: "",
       url_rep: "",
       url_site: "https://www.soulbrokers.com.br/",
     },
     {
       id: 4,
-      image:
-        "./img_projects/BG-MARK.png",
+      image: "./img_projects/BG-MARK.png",
       title: "Email Marketing",
-      description:
-        "",
+      description: "",
       url_rep: "https://github.com/Pedrofelip/email-marketing-V4",
       url_site: "",
     },
@@ -347,29 +352,25 @@ export function ContextProvider({ children }: ContextProviderProps) {
       id: 5,
       image: "./img_projects/BG-RAMEMGO.png",
       title: "RamenGo",
-      description:
-        "",
+      description: "",
       url_rep: "https://github.com/Pedrofelip/RamenGo",
       url_site: "https://pedrofelip.github.io/RamenGo/",
     },
     {
       id: 6,
-      image:
-        "./img_projects/BG-2G.png",
+      image: "./img_projects/BG-2G.png",
       title: "Controle de Usuario",
-      description:
-        "",
+      description: "",
       url_rep: "https://github.com/Pedrofelip/teste-pratico-2rp",
       url_site: "",
     },
     {
       id: 7,
-      image:
-        "./img_projects/BG-ONEUP.png",
+      image: "./img_projects/BG-ONEUP.png",
       title: "OneUp",
-      description:
-        "",
-      url_rep: "https://github.com/Pedrofelip/Terceiro-termo-DEV-SENAI/tree/main/projeto%20final_OneUp",
+      description: "",
+      url_rep:
+        "https://github.com/Pedrofelip/Terceiro-termo-DEV-SENAI/tree/main/projeto%20final_OneUp",
       url_site: "",
     },
     {
@@ -377,8 +378,7 @@ export function ContextProvider({ children }: ContextProviderProps) {
       image:
         "https://private-user-images.githubusercontent.com/73732845/285543958-855123b6-69cf-4cbe-8a90-d9a09620588b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDg5ODUwNDMsIm5iZiI6MTc0ODk4NDc0MywicGF0aCI6Ii83MzczMjg0NS8yODU1NDM5NTgtODU1MTIzYjYtNjljZi00Y2JlLThhOTAtZDlhMDk2MjA1ODhiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjAzVDIxMDU0M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ5MWQ0MjI2MmJmM2VlMWRiY2MzNWY5Y2FkNWNhNzRjZTM0OGQ5YTk5Nzg4NjhiZTBiOGJjOGE3MDk4OTNlNmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.1yXbYDHfEftkKtqGGCjKlbOTLC4YERuXExluGOPujEU",
       title: "DermaScan",
-      description:
-        "",
+      description: "",
       url_rep: "https://github.com/Pedrofelip/Global-Solution-DermaScan",
       url_site: "",
     },

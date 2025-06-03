@@ -10,13 +10,13 @@ type ButtonProps = {
   url: string;
 };
 
-export default function ScrollDownButton({ url }:ButtonProps) {
+export default function ScrollDownButton({ url }: ButtonProps) {
   const [showButton] = useState(true);
 
- // useEffect(() => {
-   // const timer = setTimeout(() => setShowButton(true), 0); // Aparece após 2s
-   // return () => clearTimeout(timer);
- // }, []);
+  // useEffect(() => {
+  // const timer = setTimeout(() => setShowButton(true), 0); // Aparece após 2s
+  // return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <a href={url}>
@@ -29,8 +29,13 @@ export default function ScrollDownButton({ url }:ButtonProps) {
           >
             <motion.button
               className={styles.button}
-              animate={{ y: [0, -10, 0,] }}
-              transition={{ duration: 1, repeat: Infinity, ease: "easeInOut", type: "tween" }}
+              animate={{ y: [0, -10, 0] }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                ease: "easeInOut",
+                type: "tween",
+              }}
             >
               <i className="fa-solid fa-angles-down"></i>
             </motion.button>

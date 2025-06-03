@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import styles from './ScrollBtn.module.css'
+import React, { useState, useEffect } from "react";
+import styles from "./ScrollBtn.module.css";
 
 const ScrollBtn = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,11 +16,11 @@ const ScrollBtn = () => {
 
   // Adiciona o ouvinte de scroll quando o componente é montado
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Limpeza do ouvinte quando o componente for desmontado
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -29,7 +29,7 @@ const ScrollBtn = () => {
       {/* O botão só será renderizado se isVisible for true */}
       {isVisible && (
         <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Exemplo de ação, leva para o topo
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} // Exemplo de ação, leva para o topo
           className={styles.scroll_button}
         >
           <i className="fa-solid fa-angles-up"></i>

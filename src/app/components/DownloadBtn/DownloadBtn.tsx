@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 // import { motion, AnimatePresence } from 'framer-motion';
-import confetti from 'canvas-confetti';
+import confetti from "canvas-confetti";
 // import styles from './DownloadBtn.module.css';
-import global from '../../page.module.css'
+import global from "../../page.module.css";
 
 // const balloonId = 0;
 
@@ -13,19 +13,24 @@ export default function DownloadBtn() {
   const [, setAnimating] = useState(false);
 
   const handleClick = () => {
-
-    const audio4 = new Audio('/sounds/mixkit-fairy-arcade-sparkle-866.wav');
+    const audio4 = new Audio("/sounds/mixkit-fairy-arcade-sparkle-866.wav");
     audio4.play();
-    const audio3 = new Audio('/sounds/mixkit-conference-audience-clapping-strongly-476.wav');
+    const audio3 = new Audio(
+      "/sounds/mixkit-conference-audience-clapping-strongly-476.wav"
+    );
     audio3.play();
-    const audio = new Audio('/sounds/mixkit-birthday-crowd-party-cheer-531.wav');
+    const audio = new Audio(
+      "/sounds/mixkit-birthday-crowd-party-cheer-531.wav"
+    );
     audio.play();
-    const audio2 = new Audio('/sounds/mixkit-animated-small-group-applause-523.wav');
+    const audio2 = new Audio(
+      "/sounds/mixkit-animated-small-group-applause-523.wav"
+    );
     audio2.play();
 
-    const link = document.createElement('a');
-    link.href = '/CURRÍCULO - PEDRO FELIPE BARROS DA SILVA.pdf';
-    link.download = 'CURRÍCULO - PEDRO FELIPE BARROS DA SILVA.pdf';
+    const link = document.createElement("a");
+    link.href = "/CURRÍCULO - PEDRO FELIPE BARROS DA SILVA.pdf";
+    link.download = "CURRÍCULO - PEDRO FELIPE BARROS DA SILVA.pdf";
     link.click();
 
     setAnimating(true);
