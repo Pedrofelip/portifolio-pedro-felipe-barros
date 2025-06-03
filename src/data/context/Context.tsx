@@ -376,7 +376,7 @@ export function ContextProvider({ children }: ContextProviderProps) {
     {
       id: 8,
       image:
-        "https://private-user-images.githubusercontent.com/73732845/285543958-855123b6-69cf-4cbe-8a90-d9a09620588b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDg5ODUwNDMsIm5iZiI6MTc0ODk4NDc0MywicGF0aCI6Ii83MzczMjg0NS8yODU1NDM5NTgtODU1MTIzYjYtNjljZi00Y2JlLThhOTAtZDlhMDk2MjA1ODhiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjAzVDIxMDU0M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ5MWQ0MjI2MmJmM2VlMWRiY2MzNWY5Y2FkNWNhNzRjZTM0OGQ5YTk5Nzg4NjhiZTBiOGJjOGE3MDk4OTNlNmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.1yXbYDHfEftkKtqGGCjKlbOTLC4YERuXExluGOPujEU",
+        "./img_projects/BG-DERMA.png",
       title: "DermaScan",
       description: "",
       url_rep: "https://github.com/Pedrofelip/Global-Solution-DermaScan",
