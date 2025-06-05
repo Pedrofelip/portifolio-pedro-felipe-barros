@@ -94,11 +94,7 @@ export default function Home() {
                   foco em colaboração e entrega de resultados.
                   <br />
                   <br />
-                  Um pensamento que me resume como pessoa é que todo dia é um
-                  bom dia para aprender algo novo e se aprimorar, estou em
-                  constante evolução e sempre buscando a minha melhor versão
-                  então independente da situação acredito que sempre existirá
-                  algo bom que podemos aprender.
+                  Um pensamento que me resume como pessoa é que todo dia é um bom dia para aprender algo novo e se aprimorar, estou em constante evolução e sempre buscando a minha melhor versão, então, independente da situação, acredito que sempre existirá algo bom que podemos aprender.
                 </p>
               </div>
               <div
@@ -145,9 +141,7 @@ export default function Home() {
                 interação e manipulação em bancos de dados.
                 <br />
                 <br />
-                Utilizo <span>Git e GitHub</span> para versionamento e controle
-                de versão e para apoiar no design de interfaces mais intuitivas
-                e funcionais atuo com <span>Figma</span>.
+                Utilizo <span>Git e GitHub</span> para versionamento e para apoiar no design de interfaces mais intuitivas e funcionais atuo com <span>Figma</span>.
                 {/* <br />
                 <br />
                 No lado pessoal, sou comunicativo, proativo, tenho facilidade

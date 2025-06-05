@@ -343,5 +343,6 @@
         font-size: var(--font_size_responsive);
         padding: 5px 0px;
         cursor: not-allowed;
+        
       }
   }

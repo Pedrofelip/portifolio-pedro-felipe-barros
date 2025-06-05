@@ -29,13 +29,14 @@ export default function CardProject({ project }: CardProps) {
               Repositorio <i className="fa-brands fa-github"></i>
             </a>
             {project.url_site == "" ? (
-              <a href={project.url_site} className={styles.disable_btn}>
+              <a className={styles.disable_btn}>
                 Visitar site
               </a>
             ) : (
               <a
                 href={project.url_site}
                 className={styles.transparent_btn_black}
+                target="_blank"
               >
                 Visitar site
               </a>
